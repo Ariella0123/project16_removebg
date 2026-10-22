@@ -1,0 +1,8 @@
+# 隐藏敏感配置文件及 .env
+<FilesMatch "^\.env|config\.php|composer\.json">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
+
+# 开启 URL 重写保护
+Options -Indexes
